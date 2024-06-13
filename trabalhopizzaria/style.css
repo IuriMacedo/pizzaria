@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@media screen and (max-width: 768px) {
+
+    @font-face {
+        font-family: f1;
+        src: url(fontes/hello_samosa/Hello\ Samosa.ttf);
+    }
+
+    @font-face {
+        font-family: f2;
+        src: url(fontes/nexa/Nexa-Heavy.ttf);
+    }
+
+    body {
+        padding: 0px;
+        margin: 0;
+        background-color: #f0d890;
+    }
+
+    h1 {
+        font-family: f1;
+        margin-left: 65px;
+    }
+    /* imagem da pizza */
+    .logo {
+        height: 85px;
+        width: 85px;
+    }
+    /* imagem da pizza */
+
+    .header {
+        background-color: #f4324a;
+        display: flex;
+        background-size: 100%;
+    }
+
+    /* lista de sabores */
+    .sabor {
+        flex-direction: row;
+        display: flex;
+        margin-top: 550px;
+    }
+
+    ol {
+        font-size: 20px;
+    }
+    /*  fim da lista */
+
+    /* carrossel */
+    .container {
+        height: 460px;
+        width: 800px;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 325px;
+    }
+   
+    .bar {
+        background-color: #f4324a;
+        width: 50px;
+        height: 15px;
+        margin: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .navegacao {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+    }
+
+    .bar :hover {
+        background: #0bd125;
+    }
+
+    .container input {
+        display: none;
+    }
+
+    .imagens {
+        display: flex;
+        height: 100%;
+        width: 600%;
+    }
+
+    .imagem {
+        width: 16.6666666667%;
+        transition: 0.5s;
+    }
+
+    #imagem1:checked~.img1 {
+        margin-left: 0;
+    }
+
+    #imagem2:checked~.img1 {
+        margin-left: -16.6666666667%;
+    }
+
+    #imagem3:checked~.img1 {
+        margin-left: -33.3333333333%;
+    }
+
+    #imagem4:checked~.img1 {
+        margin-left: -50%;
+    }
+
+    #imagem5:checked~.img1 {
+        margin-left: -66.6666666666%;
+    }
+
+    #imagem6:checked~.img1 {
+        margin-left: -83.33333333333%;
+    }
+    /* fim do carrossel */
+
+    .cla{
+        margin-left: 125px;
+    }
+
+    form{
+        text-align: center;
+        font-size: 20px;
+        font-family: f2;
+    }
+
+    input{
+        font-size: 15px;
+        border-radius: 4px;
+        box-shadow: 5px 10px 15px black;
+    }
+
+    .submit{ 
+        font-size: 20px;
+        border-radius: 7px;
+        box-shadow: 5px 10px 15px black;
+    }
+
+    footer{
+        text-align: center;
+        font-family: f2;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        font-size: 17px;
+        border-radius: 7px;
+        box-shadow: 5px 10px 15px black;
+        background-color: #f4324a;
+    }
+
+}
+
+/* ----PC----- */
+
+/* body {
+    padding: 0px;
+    margin: 0;
+    background-color: #f0d890;
+}
+
+h1 {
+    margin-left: 65px;
+}
+/*  imagem da pizza */
+.logo {
+    height: 85px;
+    width: 85px;
+}
+
+
+.header {
+    background-color: #f4324a;
+    display: flex;
+    background-size: 100%;
+}
+
+.sabor {
+    flex-direction: row;
+    display: flex;
+    margin-left: 55px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+ol {
+    font-size: 15px;
+}
+
+
+li {
+    font-family: f2;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 325px;
+}
+
+.imagem img {
+    height: 50%;
+    width: 50%;
+    margin-top: 130px;
+    margin-left: 200px;
+}
+
+.bar {
+    background-color: #f4324a;
+    width: 50px;
+    height: 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar :hover {
+    background: #0bd125;
+}
+
+.container input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 600%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+    width: 850px;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666666%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.33333333333%;
+}
+
+.h2 {
+    display: flex;
+    margin-top: 530px;
+    margin-left: 30px;
+}
+
+h2 {
+    margin-left: 50px;
+    font-family: f1;
+}
